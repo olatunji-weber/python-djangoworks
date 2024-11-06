@@ -1,15 +1,5 @@
-class Mamal:
-    def walk(self):
-        return "Walking...."
+from utils import find_max
 
+numbers = [10, 5, 4, 9, 29, 100]
 
-class Dog(Mamal):
-    pass
-
-class Cat(Mamal):
-    pass
-
-bingo = Dog()
-print(f"The dog is {bingo.walk()}")
-kitty = Cat()
-print(f"The cat is {kitty.walk()}")
+print(f"The maximum of the numbers is {find_max(numbers)}")
